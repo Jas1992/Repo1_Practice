@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="1" name="practice.PersonTest" time="0.03" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="practice.PersonTest" time="0.013" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib"/>
@@ -26,7 +26,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/jasminedaniels/Documents/Programs/Java/sts_workspace1/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf3315971419034179105.tmp"/>
+    <property name="classworlds.conf" value="/Users/jasminedaniels/Documents/Programs/Java/sts_workspace1/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5913530075019727010.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/jasminedaniels/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -62,16 +62,6 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="practice.PersonTest" name="VerifyFirstName" time="0.019"/>
-  <testcase classname="practice.PersonTest" name="VerifyLastNameFail" time="0.011">
-    <failure message="expected [Rachel] but found [Smith]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Rachel] but found [Smith]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at practice.PersonTest.VerifyLastNameFail(PersonTest.java:28)
-</failure>
-  </testcase>
+  <testcase classname="practice.PersonTest" name="VerifyFirstName" time="0.013"/>
+  <testcase classname="practice.PersonTest" name="VerifyLastNameFail" time="0"/>
 </testsuite>

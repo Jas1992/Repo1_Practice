@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-practice.PersonTest">
-              <span class="suite-name border-failed">practice.PersonTest</span>
+              <span class="suite-name border-passed">practice.PersonTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-practice.PersonTest" class="hide-methods failed suite-practice.PersonTest"> (hide)</a> <!-- hide-methods failed suite-practice.PersonTest -->
-                      <a href="#" panel-name="suite-practice.PersonTest" class="show-methods failed suite-practice.PersonTest"> (show)</a> <!-- show-methods failed suite-practice.PersonTest -->
-                    </span>
-                    <div class="method-list-content failed suite-practice.PersonTest">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-practice.PersonTest" title="practice.PersonTest" hash-for-method="VerifyLastNameFail">VerifyLastNameFail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-practice.PersonTest -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-practice.PersonTest" title="practice.PersonTest" hash-for-method="VerifyFirstName">VerifyFirstName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-practice.PersonTest" title="practice.PersonTest" hash-for-method="VerifyLastNameFail">VerifyLastNameFail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-practice.PersonTest -->
@@ -131,25 +122,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-practice.PersonTest" class="panel practice.PersonTest">
-          <div class="suite-practice.PersonTest-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">practice.PersonTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyLastNameFail">
-                  </a> <!-- VerifyLastNameFail -->
-                  <span class="method-name">VerifyLastNameFail</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Rachel] but found [Smith]
-	at practice.PersonTest.VerifyLastNameFail(PersonTest.java:28)
-... Removed 40 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-practice.PersonTest-class-failed -->
           <div class="suite-practice.PersonTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -161,6 +133,13 @@
                   <a name="VerifyFirstName">
                   </a> <!-- VerifyFirstName -->
                   <span class="method-name">VerifyFirstName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLastNameFail">
+                  </a> <!-- VerifyLastNameFail -->
+                  <span class="method-name">VerifyLastNameFail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,16 +199,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyFirstName')
 data.setCell(0, 2, 'practice.PersonTest')
-data.setCell(0, 3, 18);
+data.setCell(0, 3, 10);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'VerifyLastNameFail')
 data.setCell(1, 2, 'practice.PersonTest')
-data.setCell(1, 3, 8);
+data.setCell(1, 3, 0);
 window.suiteTableData['practice.PersonTest']= { tableData: data, tableDiv: 'times-div-practice.PersonTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 ms</span>
+              <span class="suite-total-time">Total running time: 10 ms</span>
               <div id="times-div-practice.PersonTest">
               </div> <!-- times-div-practice.PersonTest -->
             </div> <!-- times-div -->
@@ -261,10 +240,8 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">VerifyLastNameFail</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">12 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

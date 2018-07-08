@@ -22,7 +22,7 @@ public class PersonTest
 	}
 	
 	@Test
-	public void VerifyLastName()
+	public void VerifyLastNameFail()
 	{
 		Person p = new Person("Rachel", "Smith", 32);
 		Assert.assertEquals(p.getLastName(), "Smith");
