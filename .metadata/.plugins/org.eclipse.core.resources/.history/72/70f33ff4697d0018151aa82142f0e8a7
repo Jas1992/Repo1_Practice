@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package practice;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+/**
+ * @author jasminedaniels
+ *
+ */
+public class PersonTest 
+{
+	@Test
+	public void VerifyFirstName()
+	{
+		Person p = new Person("Rachel", "Smith", 30);
+		Assert.assertEquals(p.getFirstName(), "Rachel");
+	}
+}

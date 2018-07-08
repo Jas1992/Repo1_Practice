@@ -1,16 +1,30 @@
+/**
+ * 
+ */
 package practice;
 
-import static org.junit.Assert.*;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
-import org.junit.Test;
-
-public class PersonTest {
-
+/**
+ * @author jasminedaniels
+ *
+ */
+public class PersonTest 
+{
 	@Test
-	public void VerifyFirstName() 
+	public void VerifyFirstName()
 	{
 		Person p = new Person("Rachel", "Smith", 30);
-		assertEquals(p.getFirstName(), "Rachel");
+		Assert.assertEquals(p.getFirstName(), "Rachel");
+		
+		System.out.println("Test 1: Verify First Name");
 	}
-
+	
+	@Test
+	public void VerifyLastNameFail()
+	{
+		Person p = new Person("Rachel", "Smith", 32);
+		Assert.assertEquals(p.getLastName(), "Rachel");
+	}
 }
